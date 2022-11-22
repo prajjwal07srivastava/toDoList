@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="https://kit.fontawesome.com/81831682c9.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"
+        integrity="sha512-d+dtcSjz831KbYcB3pS7cd3cqlaZ/gbbnZWC4KeLM8AToNtm83Rbc5au5k3bFBh6EwlphOGJtj7oDg6k+NGbPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div>
+        <h1 id="title">TO-DO-LIST</h1>
+        <input type="text" placeholder="Search.">
+    </div>
+    <br>
+    <h4>Feed your task from the bar given below</h4>
+    <div id="form">
+        <form id="addForm">
+            <input class="todo-input" type="text" placeholder="Add a task.">
+            <button class="todo-btn" type="submit">Submit !</button>
+        </form>
+    </div>
+    <div>
+        <p id="dt"><span id="datetime"></span>(Last Updated)</p>
+        <script src="time.js"></script>
+    </div>
+    <div id="myUnOrdList">
+        <ul class="todo-list">
+            <!-- (Basic Format)
+            <div class="todo">
+                items added to this list:
+                <li></li>
+                <button class="delete-btn">delete</button>
+                <button>drag</button>
+            </div> -->
+        </ul>
+    </div>
+    <script src="todo.js"></script>
+    <script>
+        const dragArea = document.querySelector(".todo");
+        new Sortable(dragArea, {
+            animation: 350
+        });
+    </script>
+
+    
+</body>
+
+</html>

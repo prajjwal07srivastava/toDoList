@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    /* background-image: linear-gradient(100deg, #d4f1ff, #ffffff); */
+    color: #1a150e;
+    transition: 0.3s linear;
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgreen;
+}
+#title
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 10px #555f67;;
+}
+#addForm
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+#addForm input
+{
+    color: black !important;
+    font-size: 17px;
+}
+.todo-input
+{
+    width:80%;
+    margin: auto;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: lavender;
+    padding: 12px 20px;
+}
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+  }
+  ::placeholder { 
+    color: black;
+  }
+  
+#addForm button
+{
+   width: 20%;
+   margin: auto;
+   background-color: purple;
+   color: white;
+   border: none;
+   border-radius: 20px;
+   padding: 12px 12px;
+   font-size: 15px;
+}
+#addForm button:hover
+{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+#datetime
+{
+    text-align: center;
+    display: block;
+    color: black;
+}
+#dt{
+    text-align: center;
+}
+.todo
+{
+    width:fit-content;
+    margin: auto;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #b5c4c9;
+    padding: 12px 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.todo button
+{
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background-color: #01394c;
+}
+.todo button:hover
+{
+    box-shadow: 0 0 10px pink;
+}
+.todo li
+{
+    list-style: none;
+    font-size: 1.5rem;
+}
+.fall {
+    transition: 0.5s;
+    transform: translateY(45rem) rotateZ(45deg);
+    opacity: 0;
+}
+  input
+  {
+    width:20%;
+    float: right;
+    margin: auto;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #01394c;
+    padding: 12px 20px;
+    color: white;
+    font-size: 17px;
+  }
